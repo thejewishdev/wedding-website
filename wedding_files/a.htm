@@ -383,71 +383,53 @@
     </div>
 </div>
 <script>
-     var music_play = 0;
-     var name = 1;
+    var music_play = 0;
+    var audio = document.getElementById("audio");
 
-     $(window).ready(function(){
-        playMusic(music_play);
-        openName(name);
-    })
-
-    $(document).one('touchstart', function() {
-        toggleMusic(music_play);
+    $(window).on("load", function () {
+        attemptAutoplay();
     });
 
+    // Fallback: start music on first interaction
+    $(document).one("click touchstart", function () {
+        if (!music_play) {
+            startMusic();
+        }
+    });
 
-    function toggleName() {
-        if(name == 1){
-            name = 0;
+    function toggleMusic() {
+        if (music_play) {
+            stopMusic();
         } else {
-            name = 1;
-        }
-        openName(name);
-    }
-
-    function openName(type = 1){
-        if(type == 1){
-            $(".song").hide();
-            $("#arrow").addClass("rotateTest");
-
-        } else{
-            $(".song").show();
-            $("#arrow").removeClass("rotateTest");
+            startMusic();
         }
     }
 
-
-    function toggleMusic(){
-        if(music_play == 1){
-            music_play = 0;
-            $(".play-sm").html('<img src="./public/images/play.png" />');
-        } else{
+    function startMusic() {
+        audio.play().then(() => {
             music_play = 1;
-            $(".play-sm").html('<img src="./public/images/stop.svg" />');
-
-        }
-        playMusic(music_play);
+            $(".play-sm").html('<img src="a_data/stop.svg">');
+        }).catch(err => {
+            console.log("Autoplay blocked:", err);
+        });
     }
 
-    function playMusic(type = 1){
-        var audio = $("#audio")[0];
-        if (type == 1) {
-            // Play audio
-            audio.play().then(() => {
-                // Playback started successfully
-                console.log('Audio playback started');
-            }).catch(error => {
-                // Autoplay was prevented
-                console.log('Autoplay was prevented: ', error);
-                // Handle this case (e.g., show a play button)
-            });
-        } else {
-            // Pause audio
-            audio.pause();
-        }
+    function stopMusic() {
+        audio.pause();
+        music_play = 0;
+        $(".play-sm").html('<img src="a_data/play.png">');
     }
 
+    function attemptAutoplay() {
+        audio.play().then(() => {
+            music_play = 1;
+            $(".play-sm").html('<img src="a_data/stop.svg">');
+        }).catch(err => {
+            console.log("Autoplay blocked by browser");
+        });
+    }
 </script>
+
 <!-- <script src="./public/scripts/wow.min.js?2"></script> -->
 <!-- AutoScroll -->
 <script>
@@ -493,6 +475,7 @@
 
 
 </body></html>
+
 
 
 
