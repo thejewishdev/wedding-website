@@ -1,0 +1,43 @@
+/* GHEAMariam */
+@font-face {
+    font-family: "GHEAMariam";
+    src: url("../fonts/GHEAMariam/GHEAMariam-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GHEAMariam";
+    src: url("../fonts/GHEAMariam/GHEAMariam-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GHEAMariam";
+    src: url("../fonts/GHEAMariam/GHEAMariam-RegularItalic.otf") format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "GHEAMariam";
+    src: url("../fonts/GHEAMariam/GHEAMariam-BoldItalic.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* CinzelDecorative */
+@font-face {
+    font-family: "CinzelDecorative";
+    src: url("../fonts/CinzelDecorative/CinzelDecorative-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CinzelDecorative";
+    src: url("../fonts/CinzelDecorative/CinzelDecorative-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}

@@ -1,0 +1,40 @@
+.section-margin {
+  margin: 2.5rem auto 5rem auto;
+}
+
+.swiper-infoContainer {
+  gap: 1.5rem;
+}
+
+.part-1 {
+  grid-template-columns: 4.25rem auto 1fr;
+  gap: 1.5rem;
+}
+
+.part-2 {
+  display: grid;
+  grid-template-columns: 1fr auto 4.25rem;
+  gap: 1.5rem;
+}
+
+.swiper-date {
+  font-size: 1.5rem;
+}
+
+.section1__textBlock h1,
+.swiper-textBlock h1 {
+  font-size: 6.5rem;
+}
+
+.section5__scheduleBlock {
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.section2__title,
+.section3__title,
+.section5__title,
+.section6__title,
+.section7__title {
+  font-size: 1.25rem;
+}

@@ -1,0 +1,32 @@
+.section-margin {
+  margin: 3.5rem auto 7rem auto;
+}
+
+.section1__textBlock h1,
+.swiper-textBlock h1 {
+  font-size: 7.5rem;
+}
+
+.section5__scheduleBlock {
+  gap: 4.25rem;
+}
+
+.schedule__image {
+  width: 10.5rem;
+  height: 5.5rem;
+}
+/* Audio part */
+.song {
+  font-size: 1.1rem;
+}
+.song-name {
+  font-size: 0.9rem;
+}
+.close-arrow button {
+  width: 2rem;
+  height: 2rem;
+}
+.close-arrow {
+  left: -1.225rem;
+}
+/* Audio part */

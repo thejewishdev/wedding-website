@@ -1,0 +1,24 @@
+.section-margin {
+  margin: 3rem auto 6rem auto;
+}
+
+.section1__textBlock h1,
+.swiper-textBlock h1 {
+  font-size: 7rem;
+}
+
+.section5__scheduleBlock {
+  gap: 2.25rem;
+}
+
+.section2,
+.section3,
+.section4,
+.section6,
+.section7 {
+  width: 90%;
+}
+
+.schedule__time {
+  font-size: 2rem;
+}

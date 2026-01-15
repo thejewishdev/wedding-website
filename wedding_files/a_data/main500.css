@@ -1,0 +1,142 @@
+.section-margin {
+  margin: 1.5rem auto 3rem auto;
+}
+
+.swiper-infoContainer {
+  gap: 1rem;
+}
+
+.part-1 {
+  grid-template-columns: 1rem auto 1fr;
+  gap: 1rem;
+}
+
+.part-2 {
+  display: grid;
+  grid-template-columns: 1fr auto 1rem;
+  gap: 1rem;
+}
+
+.swiper-date,
+.swiper-line {
+  visibility: hidden;
+}
+
+.mobile-swiper-date {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  position: absolute;
+  top: 1.875rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-size: 1.25rem;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+.mobile-date-line {
+  width: 2.25rem;
+  height: 1px;
+  background-color: white;
+}
+
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.section1__textBlock h1,
+.swiper-textBlock h1 {
+  font-size: 6rem;
+}
+
+.section1__textBlock p,
+.swiper-textBlock p {
+  font-size: 1.25rem;
+}
+
+.section2__countDown-number,
+.section2__countDown-colon {
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+}
+
+.section5 {
+  gap: 2.5rem;
+}
+
+.section6__addressBlock {
+  width: 100%;
+}
+
+.section8 {
+  height: 12.5rem;
+}
+/*footer*/
+
+.footer .footer-title {
+  font-size: 1.1rem;
+  line-height: 1.5em;
+}
+
+.footer .link-to-website {
+  font-size: 1.1rem;
+}
+
+.footer .img-part {
+  width: 1.5em;
+}
+.social-links img {
+  height: 1em;
+}
+/*footer*/
+
+/* Audio part */
+.audio-div {
+  height: 3.5rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  column-gap: 0.2rem;
+  bottom: 5%;
+}
+.song {
+  font-size: 0.75rem;
+}
+.play {
+  width: 2.313rem;
+  height: 2.313rem;
+}
+.play button {
+  width: 2.313rem;
+  height: 2.313rem;
+}
+.play-sm img {
+  height: 0.611rem;
+  width: auto;
+  object-fit: contain;
+}
+.play-sm {
+  width: 1.674rem;
+  height: 1.674rem;
+}
+.close-arrow button img {
+  width: 0.575rem;
+  height: 0.575rem;
+}
+.close-arrow button {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.song-name {
+  font-size: 0.6rem;
+}
+.close-arrow {
+  left: -0.925rem;
+}
+/* Audio part */
